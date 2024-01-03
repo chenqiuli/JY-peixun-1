@@ -1,0 +1,21 @@
+{
+  "list": {
+    "data": [
+      {
+        "id": 1,
+        "title": "学react",
+        "content": "详情内容一"
+      },
+      {
+        "id": 2,
+        "title": "学vue",
+        "content": "详情内容二"
+      },
+      {
+        "id": 3,
+        "title": "学angular",
+        "content": "详情内容三"
+      }
+    ]
+  }
+}
