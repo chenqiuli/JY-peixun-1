@@ -17,17 +17,9 @@
 
 #### 1、如何创建第一个 react 项目
 
-- （1）全局安装
-  ```bash
-  npm i -g create-react-app
-  create-react-app myproject --template typeScript
-  ```
-  - PS：如遇全局安装失败，执行`npm prefix -g`检测 npm 的 node_modules 的 bin 目录，将其 bin 路径添加至系统环境电脑 path 中即可。
-- （2）临时安装
-  ```bash
-  npx create-react-app myproject --template typeScript
-  ```
-  - PS：`npx`可以避免全局模块安装，而直接执行 npm 的 node_modules 的 bin 目录下的命令
+```bash
+npx create-umi@latest
+```
 
 #### 2、JSX 语法：
 
