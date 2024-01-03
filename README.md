@@ -527,6 +527,48 @@ const ListDetail = ({ info }: { info: string }) => {
 
 #### 3、路由跳转
 
+- 路由跳转并携带参数
+
+  - 路由传参：
+
+  ```jsx
+  import { history } from "umi";
+   <!-- routes文件中配置：{ path: "/detail/:name", component: "detail" } -->
+   history.push(`/detail/${item.title}`);
+  ```
+
+  - 在url的?后跳转并携带参数：
+
+  ```jsx
+  history.push(`/detail2?title=${item.title}`);
+  ```
+
+- 接收路由参数
+
+  - 接收动态路由：
+
+  ```jsx
+  import { history, useParams } from "umi";
+  const { name } = useParams();
+  ```
+
+  - 接收?后的参数：
+
+  ```jsx
+  import { history, useLocation } from "umi";
+  const location = useLocation();
+  const query: {
+    title?: string;
+  } = qs.parse(location.search.substring(1));
+  ```
+
+- 路由回退
+
+```jsx
+import { history } from "umi";
+history.back();
+```
+
 ### 五、实践演练二
 
 - TodoList，组件复用 demo

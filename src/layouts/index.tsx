@@ -1,20 +1,26 @@
-import { Link, Outlet } from 'umi';
-import styles from './index.less';
+import { Link, Outlet } from "umi";
+import styles from "./index.less";
 
 export default function Layout() {
   return (
     <div className={styles.navs}>
-      {/* <ul>
+      <ul className={styles.nav}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/one">react基础</Link>
         </li>
         <li>
-          <Link to="/docs">Docs</Link>
+          <Link to="/todolist">案例1</Link>
         </li>
         <li>
-          <a href="https://github.com/umijs/umi">Github</a>
+          <Link to="/two">react进阶</Link>
         </li>
-      </ul> */}
+        <li>
+          <Link to="/todolist2">案例2</Link>
+        </li>
+        <li>
+          <Link to="/four">Antd案例3</Link>
+        </li>
+      </ul>
       <Outlet />
     </div>
   );
