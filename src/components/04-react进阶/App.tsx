@@ -12,11 +12,14 @@ export default function Home() {
       <Header
         title="Header1"
         onCallback={(val) => {
+          console.log(val, "接收来自子组件的值");
           setflag(val);
         }}
       />
       {flag && <div>有内容</div>}
-      {/* <Header /> */}
+      {/* <Header />
+      <Header /> */}
+
       <h2>插槽</h2>
       <Special>
         111

@@ -6,6 +6,7 @@ import App5 from "@/components/02-react基础/5-事件绑定";
 import App7 from "@/components/02-react基础/6-使用hooks/useEffect1";
 import App8 from "@/components/02-react基础/6-使用hooks/useEffect2";
 import App6 from "@/components/02-react基础/6-使用hooks/useState";
+import App13 from "@/components/02-react基础/7-表单受控";
 import React from "react";
 
 export default function One() {
@@ -20,6 +21,7 @@ export default function One() {
       <App6 />
       <App7 />
       <App8 />
+      <App13/>
     </div>
   );
 }

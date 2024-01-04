@@ -2,6 +2,7 @@ import React from "react";
 
 export default function App1() {
   return (
+    // 必须要有根标签 <> <div>
     <div
       id="aaa"
       style={{

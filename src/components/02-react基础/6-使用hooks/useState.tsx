@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function App6() {
   const [name, setName] = useState("张三");
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); // 解释0是啥意思
   return (
     <>
       <div>
