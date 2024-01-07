@@ -1,5 +1,10 @@
 import React from "react";
 
 export default function App3() {
-  return 3 < 2 ? <div>有内容</div> : <div>空空如也</div>;
+  return (
+    <>
+      {3 < 2 ? <div>小于</div> : <div>大于</div>}
+      {3 > 2 && <div>大于</div>}
+    </>
+  );
 }

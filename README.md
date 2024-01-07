@@ -17,6 +17,14 @@
 
 #### 1、如何创建第一个 react 项目
 
+- create-react-app方式
+
+```bash
+npx create-react-app myapp --template typeScript
+```
+
+- Umi方式
+
 ```bash
 npx create-umi@latest
 ```
@@ -93,7 +101,12 @@ export default function App2() {
 import React from "react";
 
 export default function App3() {
-  return 3 < 2 ? <div>有内容</div> : <div>空空如也</div>;
+  return (
+    <>
+      {3 < 2 ? <div>小于</div> : <div>大于</div>}
+      {3 > 2 && <div>大于</div>}
+    </>
+  );
 }
 ```
 
